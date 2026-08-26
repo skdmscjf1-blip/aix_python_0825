@@ -1,4 +1,27 @@
 
+a=9
+b=2
+print(a/b)
+print(a//b) #몫
+print(a%b)  #나머지
+
+#짝수,홀수인지?
+a = int(input("숫자를 입력하세요."))
+print(a%2==1)
+
+
+# print(100**10)
+
+# 2진수로 변경하는 명령어 bin()
+#print(bin(5)) #101
+
+# # 2진수를 10진수로 출력하는 방법
+# print(int("101",2))
+
+
+#a=b=1
+#print(a,b)
+
 #a,b =1,2
 #print(a,b)
 
