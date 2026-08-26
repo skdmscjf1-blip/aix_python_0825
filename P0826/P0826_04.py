@@ -1,16 +1,39 @@
+
+#a,b =1,2
+#print(a,b)
+
+#에러
+#a=1,b=2
+#print(a,b)
+
+# #국어,영어,수학점수를 입력받아
+# #합계,평균을 출력하시오.
+
+# d = input("이름을 입력하세요.")
+# a = int(input("국어점수를 입력하세요."))
+# b = int(input("영어점수를 입력하세요."))
+# c = int(input("수학점수를 입력하세요."))
+
+# total = a+b+c
+# avg = total/3
+# print("이름 : {}, 합계 : {}, 평균 {:.2f}".format(d,total,avg))
+
+
+
 # 잔액 : 1000
 # 송금금액 : 100
 #총금액을 출력하시오
 
-total1=1000
-send = 100
-total2=1100
+# total1=1000
+# send = 100
+# total2=1100
 
-total1=1000
-send = int(input("송금금액을 입력하세요."))
-total2 = total1+send
+# total1=1000
+# send = int(input("송금금액을 입력하세요."))
+# total2 = total1+send
 
-print("잔액 : ",total1)
-print("송금금액 : ",send)
-print("총금액 : ",total2)
-print("잔액 : {},송금금액 : {},총금액 : {}".format(total1,send,total2))
+# print("잔액 : ",total1)
+# print("송금금액 : ",send)
+# print("총금액 : ",total2)
+# print("잔액 : {},송금금액 : {},총금액 : {}".format(total1,send,total2))
+
