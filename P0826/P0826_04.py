@@ -1,13 +1,13 @@
 
-a=9
-b=2
-print(a/b)
-print(a//b) #몫
-print(a%b)  #나머지
+# a=9
+# b=2
+# print(a/b)
+# print(a//b) #몫
+# print(a%b)  #나머지
 
 #짝수,홀수인지?
-a = int(input("숫자를 입력하세요."))
-print(a%2==1)
+# a = int(input("숫자를 입력하세요."))
+# print(a%2==1)
 
 
 # print(100**10)
@@ -22,12 +22,12 @@ print(a%2==1)
 #a=b=1
 #print(a,b)
 
-#a,b =1,2
-#print(a,b)
+# a,b =1,2
+# print(a,b)
 
 #에러
-#a=1,b=2
-#print(a,b)
+# a=1,b=2
+# print(a,b)
 
 # #국어,영어,수학점수를 입력받아
 # #합계,평균을 출력하시오.

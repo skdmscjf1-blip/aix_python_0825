@@ -83,8 +83,8 @@
 
 # # 문자열 숫자인경우 > 문자열타입을 숫자타입으로 변경가능
 # str1,str2,str3 = "100","1.123","999"
-# # print(str1+1) #가능?? 불가능
+# print(str1+1) #가능?? 불가능
 # print(int(str1)+1) # 문자열숫자 자동변경안됨. int,float
 # print(float(str2)) # 실수형타입으로 변경
 # print(int(str3)+1)
-# # print(int("안녕")) #문자를 숫자로 변환에러
+# print(int("안녕")) #문자를 숫자로 변환에러
