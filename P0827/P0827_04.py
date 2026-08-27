@@ -1,4 +1,6 @@
-import random
+
+
+mport random
 import datetime #현재시간을 가져오는 클래스선언
 #from datetime import datetime
 

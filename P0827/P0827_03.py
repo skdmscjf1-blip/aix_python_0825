@@ -1,3 +1,4 @@
+
 # 랜덤함수 
 import random # 파이썬에 있는 random 클래스 사용하겠다 선언
 
