@@ -28,6 +28,11 @@
 # print("입력한 숫자 : ",my_list)
 
 
+
+
+
+
+
 import random
 lotto = random.sample(range(1,46),6)
 print(lotto)
