@@ -1,21 +1,21 @@
-stu_list = [
-    [1,"홍길동",100,90,80,270,90.0],
-    [2,"유관순",90,80,70,240,80.0],
-    [3,"이순신",80,70,60,210,70.0],
-]
+# stu_list = [
+#     [1,"홍길동",100,90,80,270,90.0],
+#     [2,"유관순",90,80,70,240,80.0],
+#     [3,"이순신",80,70,60,210,70.0],
+# ]
 
-while True:
-    flag = 0  #초기화
-    name = input("검색이름입력 : ")
-    for i,stu in enumerate(stu_list):
-        if name in stu:
-            stu_index = stu.index(name)
-            print("해당하는 이름이 있습니다.")
-            flag = 1
-            break
+# while True:
+#     flag = 0  #초기화
+#     name = input("검색이름입력 : ")
+#     for i,stu in enumerate(stu_list):
+#         if name in stu:
+#             stu_index = stu.index(name)
+#             print("해당하는 이름이 있습니다.")
+#             flag = 1
+#             break
 
-    if flag == 0:
-        print("해당하는 이름이 없습니다.")    
+#     if flag == 0:
+#         print("해당하는 이름이 없습니다.")    
 
 
 # name_arr = ["홍길동","유관순","이순신","강감찬","김구"]
@@ -55,8 +55,8 @@ while True:
 # print(stu_list[0][2],stu_list[0][3],stu_list[0][4])
 
 
-# aa = []
-# bb = []
+aa = []
+bb = []
 # value = 0
 # for i in range(0,100):
 #     aa.append(value)
@@ -70,9 +70,9 @@ while True:
 # dd = [i for i in range(0,200,2)]
 # print(dd)
 
-# # for i in range(0,100):
-# #     bb.append(aa[99-i])
-# # print(bb) 
+for i in range(0,100):
+    bb.append(aa[99-i])
+print(bb) 
 # # 
 # # 
 # aa =[10,20,30]
