@@ -31,8 +31,6 @@ def stu_input():  #학생성적입력함수
         c_no += 1   # 다음번호 1증가
     print()
 
-
-
 while True:
     main_print() #함수호출
     choice = int(input("원하는 번호를 입력하세요."))
@@ -49,5 +47,5 @@ while True:
         for s in stu:
             print(f"{s['no']}\t{s['name']}\t{s['kor']}\
 \t{s['eng']}\t{s['math']}\t{s['total']}\
-\t{s['avg']:.2f}")
-        print()
+\t{s['avg']:.2f}") 
+        print()       

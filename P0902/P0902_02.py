@@ -1,63 +1,67 @@
+# from func import *
+
+# main_print()
 
 # ### 1.앞뒤공백제거 - strip()
-# a = "     abc   "
-# print(a) #      abc 
-# print(a.strip()) #abc , 앞 뒤 공백제거 -> a반영은 안됨.
+# a = "      abc       "
+# print(a.strip()) #공백제거 -> a반영은 안됨.
 
-### 2.중간공백제거 - replace()
+# ### 2.중간공백제거 - replace()
+# b = "     a      b"
+# print(b.strip())
+# print(b.replace(" ",""))
 
-# b = "   a      b"
-# print(b.strip()) #a   b 
-# print(b.replace(" ",""))#ab
-
-
-### 3.분리 : split - 리스트타입으로 전달됨.
+# ### 3.분리 : split - 리스트타입으로 전달됨.
 # c = "딸기,수박,바나나,사과"
 # print(c)
 # print(c.split(","))
 
-d = "1,홍길동,100,100,100,300,100.0"
-dlist =d.split(",")
-dlist[2] = 90
-dlist[3] = int(dlist[3])
-dlist[4] = int(dlist[5])
-dlist[5] = int(dlist[2])+int(dlist[3])+int(dlist[4])
-dlist[6] = dlist[5]/3
-dlist2 = [str(i) for i in dlist]
-print(dlist)
+# d = "1,홍길동,100,100,100,300,100.0"
+# dlist = d.split(",")
+# dlist[2] = 90
+# dlist[3] = int(dlist[3])
+# dlist[4] = int(dlist[4])
+# dlist[5] = dlist[2]+dlist[3]+dlist[4]
+# dlist[6] = dlist[5]/3
+# print(dlist)
+# dlist2 = [str(i) for i in dlist]
+# print(dlist2)
 
-#4.특정문자로 결합 - join
-#문자열리스트만 변경가능 join결합
-#문자열로 변환됨.
-d_str = ",".join(dlist2)
-print(d_str)
+# # 4. 특정문자로 결합 - join  "1"+1
+# # 문자열리스트만 변경가능 join결합
+# # 문자열로 변환됨.
+# d_str = ",".join(dlist2)
+# print(d_str)
 
-#5. count : 문자열안에 해당문자가 몇개 있는지 확인
-#6. find : 문자열안에 해당문자 위치 반환, 없으면 -1
-#7. index : find와 동일, 없으면 에러
-
-
-
-
-
-# # join
-
-# aa = "/"
-# bb = aa.join(["바나나","딸기","사과"])
-# print(bb) # 바나나 / 딸기 / 사과
-# print(type(bb)) # <class 'str'>
+# 5. count : 문자열안에 해당문자가 몇개 있는지 확인
+# 6. find : 문자열안에 해당문자 위치 반환, 없으면 -1
+# 7. index : find와 동일, 없으면 에러
 
 
 
-# ss = "              파이썬"
+
+
+
+
+
+# join
+aa = "/"
+bb = aa.join(["바나나","딸기","사과"])
+print(bb)
+print(type(bb))
+
+
+
+
+# ss = "   파이썬"       #파이썬 - strip
+# ss2 = "<<<<파<<이<썬"  #파이썬 -replace
 # print(ss.strip())
-# ss2 = "<<<<파<<<이<<<썬"
 # print(ss2.replace("<",""))
 
 
-
 # aa = input("이름을 입력하세요.>> ").strip()
-# aa =[1,2,    3,4,5]
+
+# aa = [1,2,   3, 4 ,5]
 
 
 
@@ -65,9 +69,11 @@ print(d_str)
 # ss = "파이썬 공부!! 열심히 합시다. 파이썬"
 # print(ss.count("공부"))
 # print(ss.count("파이썬"))
-# print(ss.find("공부")) #4
-# print(ss.find("자바")) #없을때 -1
+# print(ss.find("공부"))  #4
+# print(ss.find("자바"))  #없을때 : -1
 # print(ss.index("자바")) # index는 없을때 에러
+
+
 
 
 # aa = "a/b/c/d/f/g"
@@ -75,17 +81,12 @@ print(d_str)
 # print(aa_list)
 
 # bb = "100,10,5,4,1"
-
 # # 모든수의 합을 구하시오.
-
 # bb_list = bb.split(",")
 # bb_list = [int(i) for i in bb_list]
-
 # sum = 0
-# for b in bb_list : 
+# for b in bb_list:
 #     sum += b
-
-
 # print(bb_list)
 # print("합계 : ",sum)
 
@@ -93,41 +94,39 @@ print(d_str)
 # print(bb_list2)
 
 
+
+
 # aa = "가나다라가가가나나다라라라라라라라"
-# a_dic = {}
-# # {가:10,나:5.....}
-# for a in aa :
-#     if a not in a_dic : 
-#         a_dic[a] =1
-#     else :
-#         a_dic[a] = a_dic[a] +1
-
-# print(a_dic)
-
+# ##
+# # {가:10,나:5,다:11...}
+# aa_dict = {}
+# for a in aa:
+#     if a not in aa_dict:
+#         aa_dict[a] = 1
+#     else:
+#         aa_dict[a] += 1
 
 
+# print(aa_dict)
 
-# a = [1,2,3,4,5]
-# b = [10,20,30,40,50]
-# c = []
 
-# c=list(zip(a,b))
+
+a = [1,2,3,4,5]
+b = [10,20,30,40,50]
+c = []
+
+# c = list(zip(a,b))
 # d = dict(zip(a,b))
 # print(c)
 # print(d)
 
-# for i in a:
-#     print(i)
-
-# for i,j in zip(a,b) :
+# for i,j in zip(a,b):
 #     c.append([i,j])
-# print(c)
+# print(c)    
 
-
-# for i in range(len(a)) :
+# for i in range(len(a)):
 #     c.append([a[i],b[i]])
-
-# print(c)
+# print(c)    
 
 
 
@@ -150,19 +149,19 @@ print(d_str)
 #         aa_dic[a] = 1
 #     else:
 #         aa_dic[a] = aa_dic[a]+1
-#         print("있습니다.")
+#         print("있습니다.")    
 
 # print(aa_dic)
 
 # 딕셔너리
-# a_dic = {"바나나":1,"딸기":3,"사과":2}
+# a_dic = {"바나나":1,"딸기":3,"사과":2} 
 # print(a_dic["바나나"])  #출력
 # a_dic["배"] = 5         #추가
-# print(a_dic)
+# print(a_dic) 
 # del a_dic["바나나"]      #삭제
-# print(a_dic)
+# print(a_dic) 
 # a_dic["사과"] = 100      #수정
-# print(a_dic)
+# print(a_dic) 
 
 # a = 10
 # a2 = 0
