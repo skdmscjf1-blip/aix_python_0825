@@ -8,6 +8,7 @@
 # print(a+b+c+d+e+f)
 
 # a_arr = [10,20,30,40,50,60,70,80,90,100]
+<<<<<<< HEAD
 # # sum = 0
 # # for a in a_arr:
 # #     print(a)
@@ -15,6 +16,15 @@
 # # print(sum)
 # print(a_arr[2:5]) 
 # print(a_arr[::-1])  
+=======
+# sum = 0
+# for a in a_arr:
+#     print(a)
+#     sum += a
+# print(sum)
+# # print(a_arr[2:5]) 
+# # print(a_arr[::-1])  
+>>>>>>> 67981ecbd836ee2b93e99c89bc10786ad62c2b33
 # # 
 # # 리스트 추가 : append:뒤에, insert:위치, extend:리스트+리스트 
 # # 리스트 수정 : a_arr[위치] = 1000

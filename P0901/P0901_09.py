@@ -1,6 +1,7 @@
 import random
 a_arr = list(range(1,26))
 random.shuffle(a_arr)
+print(a_arr)
 while True:
     print(" "*15,end="")
     print("[ 빙고게임 ]")
@@ -9,12 +10,13 @@ while True:
         if (i+1)%5!=0:
             print(v,end="\t")
         else:
-            print(v)    
-    print("-"*50)
-    num = int(input("원하는 번호를 입력하세요.>> "))
-    if num in a_arr:
-        idx = a_arr.index(num)
-        a_arr[idx] = "X"
+            print(v)
+            break  
+    # print("-"*50)
+    # num = int(input("원하는 번호를 입력하세요.>> "))
+    # if num in a_arr:
+    #     idx = a_arr.index(num)
+    #     a_arr[idx] = "X"
 
 
 

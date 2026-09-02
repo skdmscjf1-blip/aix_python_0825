@@ -55,8 +55,8 @@ while True:
 # print(stu_list[0][2],stu_list[0][3],stu_list[0][4])
 
 
-# aa = []
-# bb = []
+aa = []
+bb = []
 # value = 0
 # for i in range(0,100):
 #     aa.append(value)
@@ -70,9 +70,15 @@ while True:
 # dd = [i for i in range(0,200,2)]
 # print(dd)
 
+<<<<<<< HEAD
 # for i in range(0,100):
 #     bb.append(aa[99-i])
 # print(bb) 
+=======
+for i in range(0,100):
+    bb.append(aa[99-i])
+print(bb) 
+>>>>>>> 67981ecbd836ee2b93e99c89bc10786ad62c2b33
 # # 
 # # 
 # aa =[10,20,30]
