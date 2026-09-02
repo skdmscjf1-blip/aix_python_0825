@@ -1,11 +1,11 @@
-alist = list(range(1,21))
-nlist = []
-for a in alist:
-    if a%3==0: nlist.append(a)
-print(nlist)
+# alist = list(range(1,21))
+# nlist = []
+# for a in alist:
+#     if a%3==0: nlist.append(a)
+# print(nlist)
 
-a = [n for n in range(1,21) if n%3==0]
-print(a)
+# a = [n for n in range(1,21) if n%3==0]
+# print(a)
 
 # name_dic = {
 #     "aaa":'토마토',"ddd":"바나나","eee":"딸기","bbb":"배"
@@ -32,13 +32,13 @@ print(a)
 # alist4 = [1,2,3,4,5,6,7,8,9,10]
 # print(alist4)
 
-# engs = {
-#     "car":"자동차",
-#     "color":"색상",
-#     "pig":"돼지",
-#     "love":"사랑",
-#     "phone":"전화기"
-# }
+engs = {
+    "car":"자동차",
+    "color":"색상",
+    "pig":"돼지",
+    "love":"사랑",
+    "phone":"전화기"
+}
 
 # print(engs.keys())
 # print(engs.values())
@@ -61,16 +61,16 @@ print(a)
 
 
 # 
-# stu = {"no":1,"name":"홍길동","total":100}
+stu = {"no":1,"name":"홍길동","total":100}
 # for i,v in stu.items():
 #     print(i,":",v)
 
 
-# print(stu.keys())  # key
-# print(stu.values()) # value
-# print(stu.items())  # key,value
-# s_list = list(stu.values()) # 딕셔너리리스트 -> list()타입변환
-# print(s_list)
+print(stu.keys())  # key
+print(stu.values()) # value
+print(stu.items())  # key,value
+s_list = list(stu.values()) # 딕셔너리리스트 -> list()타입변환
+print(s_list)
 
 
 
