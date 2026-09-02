@@ -70,15 +70,9 @@ bb = []
 # dd = [i for i in range(0,200,2)]
 # print(dd)
 
-<<<<<<< HEAD
-# for i in range(0,100):
-#     bb.append(aa[99-i])
-# print(bb) 
-=======
-for i in range(0,100):
-    bb.append(aa[99-i])
-print(bb) 
->>>>>>> 67981ecbd836ee2b93e99c89bc10786ad62c2b33
+# # for i in range(0,100):
+# #     bb.append(aa[99-i])
+# # print(bb) 
 # # 
 # # 
 # aa =[10,20,30]

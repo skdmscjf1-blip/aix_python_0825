@@ -7,28 +7,18 @@
 # print(f)
 # print(a+b+c+d+e+f)
 
-# a_arr = [10,20,30,40,50,60,70,80,90,100]
-<<<<<<< HEAD
-# # sum = 0
-# # for a in a_arr:
-# #     print(a)
-# #     sum += a
-# # print(sum)
+a_arr = [10,20,30,40,50,60,70,80,90,100]
+sum = 0
+for a in a_arr:
+    print(a)
+    sum += a
+print(sum)
 # print(a_arr[2:5]) 
 # print(a_arr[::-1])  
-=======
-# sum = 0
-# for a in a_arr:
-#     print(a)
-#     sum += a
-# print(sum)
-# # print(a_arr[2:5]) 
-# # print(a_arr[::-1])  
->>>>>>> 67981ecbd836ee2b93e99c89bc10786ad62c2b33
-# # 
-# # 리스트 추가 : append:뒤에, insert:위치, extend:리스트+리스트 
-# # 리스트 수정 : a_arr[위치] = 1000
-# # 리스트 삭제 : pop(위치):위치가 없으면 제일뒤에, del 위치
+# 
+# 리스트 추가 : append:뒤에, insert:위치, extend:리스트+리스트 
+# 리스트 수정 : a_arr[위치] = 1000
+# 리스트 삭제 : pop(위치):위치가 없으면 제일뒤에, del 위치
 
 # a_list = [1,2,3]
 # a_list.append(4)
