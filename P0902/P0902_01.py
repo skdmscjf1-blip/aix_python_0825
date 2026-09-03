@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 alist = list(range(1,26))
 #print(alist)
 
@@ -31,13 +29,10 @@ for i in range(len(alist)) :
 
 # # 1,25까지 리스트를 생성하고
 # # 랜덤으로 리스트를 섞은 다음, 5개씩 2차원리스트를 만드시오.
->>>>>>> cf5b303a2b96172af2396a254dfb6ade2d7eb86b
 # import random
 # alist = list(range(1,26))
 # random.shuffle(alist)
-<<<<<<< HEAD
 # alist2 =[]
-
 # for i in range(0,len(alist),5) :
 #         alist2.append(alist[i:i+5])
 # print(alist2)#숫자 랜덤 
@@ -53,7 +48,7 @@ for i in range(len(alist)) :
 
 #1차원리스트를 2차원형태로 구성
 # arr = [1,2,3,4,5,6,7,8,9]
-=======
+
 # alist2 = []
 # for i in range(0,len(alist),5):
 #     alist2.append(alist[i:i+5])  #0,1,2
@@ -73,20 +68,16 @@ for i in range(len(alist)) :
 
 # 1차원리스트를 2차원형태로 구성
 # arr = [1,2,3,4,5,6,7,8,9]  #len(arr) = 9
->>>>>>> cf5b303a2b96172af2396a254dfb6ade2d7eb86b
 # arr2 = []
 # for i in range(0,len(arr),3):
 #     arr2.append(arr[i:i+3])  #0,1,2
 # print(arr2)    
 
-<<<<<<< HEAD
 # for i in range(0,len(arr),3) :
 #     arr2.append(arr[i:i+3]) #0,1,2
 # print(arr2) # [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-=======
 # arr2 = [
 #     [1,2,3],
 #     [4,5,6],
 #     [7,8,9],
 # ]
->>>>>>> cf5b303a2b96172af2396a254dfb6ade2d7eb86b
