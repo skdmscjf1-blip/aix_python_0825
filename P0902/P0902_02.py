@@ -44,11 +44,11 @@
 
 
 
-# join
-aa = "/"
-bb = aa.join(["바나나","딸기","사과"])
-print(bb)
-print(type(bb))
+# # join
+# aa = "/"
+# bb = aa.join(["바나나","딸기","사과"])
+# print(bb)
+# print(type(bb))
 
 
 
@@ -105,28 +105,26 @@ print(type(bb))
 #         aa_dict[a] = 1
 #     else:
 #         aa_dict[a] += 1
-
-
-# print(aa_dict)
+# print(aa_dict) # {'가': 4, '나': 3, '다': 2, '라': 8}
 
 
 
-a = [1,2,3,4,5]
-b = [10,20,30,40,50]
-c = []
+# a = [1,2,3,4,5]
+# b = [10,20,30,40,50]
+# c = []
 
 # c = list(zip(a,b))
 # d = dict(zip(a,b))
-# print(c)
-# print(d)
+# print(c) #[(1, 10), (2, 20), (3, 30), (4, 40), (5, 50)]
+# print(d) #{1: 10, 2: 20, 3: 30, 4: 40, 5: 50}
 
 # for i,j in zip(a,b):
 #     c.append([i,j])
-# print(c)    
+# print(c)    #[[1, 10], [2, 20], [3, 30], [4, 40], [5, 50]]
 
 # for i in range(len(a)):
 #     c.append([a[i],b[i]])
-# print(c)    
+# print(c)    #[[1, 10], [2, 20], [3, 30], [4, 40], [5, 50]]
 
 
 
@@ -136,10 +134,10 @@ c = []
 # a2 = [0]*5
 # a3 = list(range(1,6))
 # a4 = [i*i+2 for i in range(1,6) if i%2==0] #리스트내포
-# print(a4)
+# print(a4) #[6, 18]
 
 
-# # a = ["바나나","딸기","사과","딸기","딸기","사과"]
+# # # a = ["바나나","딸기","사과","딸기","딸기","사과"]
 # aa = [1,2,3,1,1,1,2,3,1,1,1,2,2,3]
 # # print(aa.count("딸기"))
 # # {"바나나":1,"딸기":3,"사과":2}
@@ -150,33 +148,32 @@ c = []
 #     else:
 #         aa_dic[a] = aa_dic[a]+1
 #         print("있습니다.")    
-
-# print(aa_dic)
+# print(aa_dic) #{1: 7, 2: 4, 3: 3}
 
 # 딕셔너리
 # a_dic = {"바나나":1,"딸기":3,"사과":2} 
-# print(a_dic["바나나"])  #출력
-# a_dic["배"] = 5         #추가
-# print(a_dic) 
+# print(a_dic["바나나"])  #출력 # 1
+# a_dic["배"] = 5         #추가 
+# print(a_dic)            # {'바나나': 1, '딸기': 3, '사과': 2, '배': 5}
 # del a_dic["바나나"]      #삭제
-# print(a_dic) 
+# print(a_dic)            # {'딸기': 3, '사과': 2, '배': 5}
 # a_dic["사과"] = 100      #수정
-# print(a_dic) 
+# print(a_dic)            #{'딸기': 3, '사과': 100, '배': 5}
 
 # a = 10
 # a2 = 0
 # a2 = a
-# print(a2)
+# print(a2) #10
 # a = 100
-# print(a2)
+# print(a2) #10
 
 
 # alist = [1,2,3]
 # alist2 = []
 # alist2 = alist      # 얕은복사
 # # alist2 = [*alist] # 깊은복사
-# print(alist2)  # 1,2,3
+# print(alist2)  # [1,2,3]
 
 
 # alist[0] = 100
-# print(alist2)
+# print(alist2) #[100, 2, 3]
