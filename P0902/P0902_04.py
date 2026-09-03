@@ -3,7 +3,7 @@
 # 코드를 간결하게 하기 위해서 함수 사용
 def stu_print():
     for s in stu:
-        print("{},{},{},{},{}".format(*s))
+        print("{}\t,{}\t,{}\t,{}\t,{}".format(*s))
 
 stu = [
     [1,"홍길동",100,100,100],

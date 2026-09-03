@@ -4,14 +4,14 @@ def cal1():
                 print(f"{i}x{j}={i*j}")
 
 def cal2(num1,num2):
-     print(num1+num2)
-     print(num1-num2)
+    print(num1+num2)
+    print(num1-num2)
 
 def cal3():
     sum = 0
-for i in range(1,11):
-    sum += i
-print("합계 : ",sum)
+    for i in range(1,11):
+        sum = sum+i
+    print("합계 : ",sum)
 
 print("1.구구단 출력")
 print("2.두수를 입력받아, +,- 값을 출력")
