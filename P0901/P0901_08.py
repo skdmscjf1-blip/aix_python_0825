@@ -18,21 +18,21 @@
 #         print("해당하는 이름이 없습니다.")    
 
 
-# name_arr = ["홍길동","유관순","이순신","강감찬","김구"]
+name_arr = ["홍길동","유관순","이순신","강감찬","김구"]
 # name = input("검색할 이름을 입력하세요.>> ")
 # # print(name_arr.index(name))
 # print(name_arr.find(name)) # 문자 find,rfind
 
-# while True:
-#     name = input("검색할 이름을 입력하세요.>> ")
-#     if name in name_arr:
-#         no = name_arr.index(name)
-#         print(no,":",name," 학생이 검색되었습니다.")
-#         change = input("변경할 이름을 입력하세요.>> ")
-#         name_arr[no] = change
-#         print(name_arr)
-#     else:
-#         print(name, "학생은 없습니다.")
+while True:
+    name = input("검색할 이름을 입력하세요.>> ")
+    if name in name_arr:
+        no = name_arr.index(name)
+        print(no,":",name," 학생이 검색되었습니다.")
+        change = input("변경할 이름을 입력하세요.>> ")
+        name_arr[no] = change
+        print(name_arr)
+    else:
+        print(name, "학생은 없습니다.")
 
 
 
@@ -70,9 +70,9 @@ bb = []
 # dd = [i for i in range(0,200,2)]
 # print(dd)
 
-for i in range(0,100):
-    bb.append(aa[99-i])
-print(bb) 
+# # for i in range(0,100):
+# #     bb.append(aa[99-i])
+# # print(bb) 
 # # 
 # # 
 # aa =[10,20,30]
