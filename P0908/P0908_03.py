@@ -21,7 +21,7 @@ class Student:
             return
         self.__kor = kor
 
-
+    
     # 클래스 내 함수 매개변수 첫번째 self
     def cal_total(self):
         self.__total = self.__kor+self.__eng+self.__math
@@ -30,13 +30,13 @@ class Student:
         self.__avg = self.__total/3
 
     def print(self):
-        print(self.__no,self.__name,self.__kor,self.__eng,self.__math,self.__total,f"{self.__avg:.2f}",sep="\t")
+        print(self.__no,self.__name,self.__kor,self.__eng,self.__math,self.__total,f"{self.__avg:.2f}",sep="\t")           
 
 stuList = []
 # 객체선언
-s = Student(1,"홍길동",100,100,99)
+s = Student(1,"홍길동",100,100,99)   
 print("-"*50)
-print(s)
+print(s) 
 print("-"*50)
 s.__kor = 70    # 클래스 변수값 수정이 안됨(캡슐화)
 s.__math = 40   # 클래스 변수값 수정이 안됨(캡슐화)

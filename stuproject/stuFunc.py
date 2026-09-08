@@ -24,7 +24,7 @@ def readStu():
             #Student(1,"홍길동",100,100,99)
             #클래스 추가
             #객체선언후 > Students 리스트에 추가
-            stus.add(Student(stu[0],stu[1],stu[2],stu[3],stu[4],stu[5],stu[6],stu[7],))
+            stus.add(Student(stu[0],stu[1],stu[2],stu[3],stu[4],stu[5],stu[6],stu[7]))
             #번호추가부분
             stuNum = len(stus.slist)+1
 
