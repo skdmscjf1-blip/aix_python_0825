@@ -229,7 +229,9 @@
 #     except : 
 #         print("숫자만 입력하세요.")
 # print(f"구매수량은 {a}개입니다.")
-        
+
+
+
 
 
 # # ============================================================
@@ -329,6 +331,14 @@ products = ["노트북", "마우스", "키보드", "모니터"]
 # # 함수 안에서 print하지 말고
 # # return을 사용하세요.
 
+# def calculate_total(a,b) :
+#     total = a*b
+#     return total
+
+# result = calculate_total(30000,5)
+# print("return 결과 : ",result)
+
+
 
 
 
@@ -339,7 +349,7 @@ products = ["노트북", "마우스", "키보드", "모니터"]
 # #
 # # 다음 직원들의 실적 데이터가 있습니다.
 
-# sales = [80000, 150000, 300000, 50000, 200000]
+sales = [80000, 150000, 300000, 50000, 200000]
 
 # # sales를 전달받아서
 # # 전체 매출을 계산하고 return하는
@@ -350,6 +360,15 @@ products = ["노트북", "마우스", "키보드", "모니터"]
 # #
 # # 힌트:
 # # sum이라는 변수 이름은 사용하지 마세요.
+
+def get_total_sales(a):
+
+    total = sum(a)
+    return total
+
+result = get_total_sales(sales)
+print(result)
+
 
 
 
@@ -377,6 +396,9 @@ products = ["노트북", "마우스", "키보드", "모니터"]
 # # "판매가 완료되었습니다."
 # #
 # # 를 출력하세요.
+
+def sell_product() :
+    
 
 
 
