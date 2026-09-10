@@ -440,15 +440,15 @@ orders = [
 # #
 # # 를 출력하세요.
 
-def search_order(name) :
-    for n in orders :
-        if orders['name'] == name :
-            print(f"{name} : {orders[n]['total']}")
-            return
-        else :
-            print("주문정보가 없습니다")
+# def search_order(name) :
+#     for n in orders :
+#         if n["name"] == name :
+#             print(f"{name} : {n['total']:,}원")
+#             return
+        
+#     print("주문정보가 없습니다")
 
-search_order("영희")
+# search_order("멍퉁이")
 
 
 
@@ -481,7 +481,7 @@ search_order("영희")
 # # ④ 에러
 
 
-
+2
 
 # # ============================================================
 
@@ -492,18 +492,19 @@ search_order("영희")
 # # global을 사용해서
 # # 함수 밖의 money를 3000원 감소시키세요.
 
-# money = 10000
+money = 10000
 
 # def use_money():
-#     # 여기에 작성
+#     global money
+#     money = money-3000
 #     pass
 
 # use_money()
 
 # print(money)
 
-# # 결과:
-# # 7000
+# 결과:
+# 7000
 
 
 
@@ -519,13 +520,20 @@ search_order("영희")
 # # 3000원을 빼고
 # # return하는 함수를 만드세요.
 # #
-# # 함수 이름:
-# # use_money
-# #
-# # 결과:
-# # 7000
+# 함수 이름:
+# use_money
+#
+# 결과:
+# 7000
 
+# def use_money(money) :
+#     money = money-3000
+#     return money
 # money = 10000
+# result=use_money(money)
+# print(result)
+
+
 
 
 
@@ -554,3 +562,120 @@ search_order("영희")
 
 # stock = 10
 # count = 3
+# def sell(stock,count) :
+#     result =stock-count
+#     return result
+
+# print("남은재고 : ",sell(10,3))
+# ============================================================
+# Python 20일차 - 파일 입출력
+# ============================================================
+
+
+# Q1.
+#
+# 다음 코드에서 "r"은 무슨 뜻인지 적으세요.
+#
+# with open("student.txt", "r", encoding="utf-8") as f:
+#
+# ① 파일 삭제
+# ② 파일 읽기
+# ③ 파일 덮어쓰기
+# ④ 파일 이어쓰기
+
+#  2. 파일 읽기
+
+
+
+# ============================================================
+
+
+# Q2.
+#
+# "w"와 "a"의 차이를 적으세요.
+#
+# "w" =
+#
+# "a" =
+
+# "w" = 덮어쓰다
+# "a" = 이어쓰다
+
+
+
+
+# ============================================================
+
+
+# Q3.
+#
+# student.txt 파일을 읽어서
+# 한 줄씩 출력하는 코드를 작성하세요.
+#
+# 조건:
+# with open() 사용
+# while True 사용
+# readline() 사용
+# 더 이상 읽을 내용이 없으면 break
+
+# with open("student.txt","r",encoding="utf-8") as f:
+#     while True:
+#         line = f.readline()
+#         if line =="": break
+
+
+
+
+# ============================================================
+
+
+# Q4.
+#
+# 아래 문자열은 파일에서 읽어왔다고 가정합니다.
+
+data = "1,영희,90,80,100\n"
+
+# 1. strip()을 사용해서 \n을 제거하세요.
+#
+# 2. ","를 기준으로 나누세요.
+#
+# 최종 결과:
+#
+# ["1", "영희", "90", "80", "100"]
+
+# str = data.strip()
+# spl_str=str.split(",")
+# print(spl_str)
+
+
+
+# ============================================================
+
+
+# Q5. 실전
+#
+# 아래 학생 데이터를 student.txt 파일에 저장하세요.
+
+students = [
+    "1,영희,90,80,100",
+    "2,철수,70,90,80",
+    "3,민수,100,100,90"
+]
+
+# 조건:
+#
+# with open() 사용
+# "w" 모드 사용
+# encoding="utf-8"
+#
+# for문으로 students를 하나씩 꺼내서 저장하세요.
+#
+# 학생 한 명마다 한 줄씩 저장되어야 합니다.
+#
+# 힌트:
+#
+# f.write(???? + "\n")
+
+# with open("c:/aaa/student.txt","w",encoding="utf-8") as f :
+#     for s in students :
+#         f.write(s+"\n")
