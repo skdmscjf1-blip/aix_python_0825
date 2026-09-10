@@ -361,13 +361,13 @@ sales = [80000, 150000, 300000, 50000, 200000]
 # # 힌트:
 # # sum이라는 변수 이름은 사용하지 마세요.
 
-def get_total_sales(a):
+# def get_total_sales(a):
 
-    total = sum(a)
-    return total
+#     total = sum(a)
+#     return total
 
-result = get_total_sales(sales)
-print(result)
+# result = get_total_sales(sales)
+# print(result)
 
 
 
@@ -397,7 +397,14 @@ print(result)
 # #
 # # 를 출력하세요.
 
-def sell_product() :
+# def sell_product(count,stock) :
+#     if count>stock :
+#         print("재고가 부족합니다.")
+#         return
+#     else :
+#         print("판매가 완료되었습니다.")
+
+# sell_product(4,5)
     
 
 
@@ -410,12 +417,12 @@ def sell_product() :
 # #
 # # 다음 주문정보가 있습니다.
 
-# orders = [
-#     {"name":"영희", "total":120000},
-#     {"name":"철수", "total":80000},
-#     {"name":"민수", "total":300000},
-#     {"name":"지수", "total":150000}
-# ]
+orders = [
+    {"name":"영희", "total":120000},
+    {"name":"철수", "total":80000},
+    {"name":"민수", "total":300000},
+    {"name":"지수", "total":150000}
+]
 
 # # search_order(name) 함수를 만드세요.
 # #
@@ -432,6 +439,11 @@ def sell_product() :
 # # 주문정보가 없습니다.
 # #
 # # 를 출력하세요.
+
+def search_order(name) :
+    if orders["name"]
+
+
 
 # # ============================================================
 # # Python 19일차
