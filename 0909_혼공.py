@@ -441,7 +441,14 @@ orders = [
 # # 를 출력하세요.
 
 def search_order(name) :
-    if orders["name"]
+    for n in orders :
+        if orders['name'] == name :
+            print(f"{name} : {orders[n]['total']}")
+            return
+        else :
+            print("주문정보가 없습니다")
+
+search_order("영희")
 
 
 
