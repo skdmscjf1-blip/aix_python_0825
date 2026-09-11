@@ -1,6 +1,28 @@
 stu_list=[]
 stuNum = 1
 
+
+def stu_read() :
+    global stuNum
+    with open("c:/aaa/stu.txt","r",encoding="utf-8") as f :
+        while True:
+            line = f.readline()
+            if line == "": break
+            stu = line.split(",")
+            for i,v in enumerate(stu) :
+                if 0<=i<=1 : continue
+                elif 2<=i<=5 : stu[i] = int(v.strip())
+                elif i==6 : stu[i] = float(v.strip())
+            stu_list.append({"no":stu[0],"name":stu[1],"kor":stu[2],"eng":stu[3],"math":stu[4],"total":stu[5],"avg":stu[6]})
+            stuNum = len(stu_list)+1
+
+def stu_write () :
+    with open("c:/aaa/stu.txt","w",encoding="utf-8") as f :
+        for s in stu_list : 
+            s_save = f"{s['no']},{s['name']},{s['kor']},{s['eng']},{s['math']},{s['total']},{s['avg']:.2f}"
+            f.write(s_save+"\n")
+        print("성적이 저장되었습니다.")
+
 def main_screen() :
     
         print("[학생성적프로그램]")
