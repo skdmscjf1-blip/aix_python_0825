@@ -1,7 +1,6 @@
 from stuFunc import  *
 
 stu_read()
-
 while True : 
     choice=main_screen()
     if choice == 1:
