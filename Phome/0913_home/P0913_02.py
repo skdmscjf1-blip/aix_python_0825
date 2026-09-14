@@ -9,12 +9,12 @@
 # 난이도 : ★★★☆☆
 # ============================================================
 
-members = [
-    {"name":"지수", "count":8},
-    {"name":"민지", "count":12},
-    {"name":"수진", "count":5},
-    {"name":"영희", "count":15}
-]
+# members = [
+#     {"name":"지수", "count":8},
+#     {"name":"민지", "count":12},
+#     {"name":"수진", "count":5},
+#     {"name":"영희", "count":15}
+# ]
 
 # [문제]
 #
@@ -52,6 +52,19 @@ members = [
 
 # ↓↓↓ Q1 답 작성 ↓↓↓
 
+# name = input("이름을 입력하세요. : ")
+# for m in members : 
+#     if m["name"] == name :
+#         m["count"] = 20
+#         print("회원 이름 : ",name)
+#         print("새로운 수업횟수 : ",m['count'])
+
+# for m in members : 
+#     print(f"{m['name']} : {m['count']}회")
+
+
+
+
 
 
 
@@ -66,12 +79,12 @@ members = [
 # 난이도 : ★★★☆☆
 # ============================================================
 
-products = [
-    {"name":"가디건", "price":180000, "count":3},
-    {"name":"스카프", "price":90000, "count":8},
-    {"name":"니트", "price":120000, "count":4},
-    {"name":"자켓", "price":250000, "count":2}
-]
+# products = [
+#     {"name":"가디건", "price":180000, "count":3},
+#     {"name":"스카프", "price":90000, "count":8},
+#     {"name":"니트", "price":120000, "count":4},
+#     {"name":"자켓", "price":250000, "count":2}
+# ]
 
 
 # [문제]
@@ -111,6 +124,15 @@ products = [
 
 
 # ↓↓↓ Q2 답 작성 ↓↓↓
+# max_sales = 0
+# max_name = ""
+# for prod in products :
+#     total = prod["price"] * prod["count"]
+#     print(f"{prod['name']} : {total}")
+#     if max_sales < total :
+#         max_sales = total
+#         max_name=prod["name"]
+# print(f"최고 매출 상품 : {max_name}\n최고 매출 : {max_sales}원")
 
 
 
@@ -121,57 +143,71 @@ products = [
 
 
 
-# ============================================================
-# Q3. 함수로 학생 등급 계산하기
-# 난이도 : ★★★★☆
-# ============================================================
 
-students = [
-    {"name":"홍길동", "kor":90, "eng":80, "math":70},
-    {"name":"김철수", "kor":70, "eng":85, "math":90},
-    {"name":"이영희", "kor":95, "eng":90, "math":100},
-    {"name":"박민수", "kor":60, "eng":65, "math":55}
-]
+# # ============================================================
+# # Q3. 함수로 학생 등급 계산하기
+# # 난이도 : ★★★★☆
+# # ============================================================
+
+# students = [
+#     {"name":"홍길동", "kor":90, "eng":80, "math":70},
+#     {"name":"김철수", "kor":70, "eng":85, "math":90},
+#     {"name":"이영희", "kor":95, "eng":90, "math":100},
+#     {"name":"박민수", "kor":60, "eng":65, "math":55}
+# ]
 
 
-# [문제]
-#
-# 학생 한 명의 평균을 받아서
-# 등급을 return 하는 함수를 만드세요.
-#
-#
-# 평균이
-#
-# 90 이상 : A
-# 80 이상 : B
-# 70 이상 : C
-# 60 이상 : D
-# 60 미만 : F
-#
-#
-# 함수 형태:
-#
+# # [문제]
+# #
+# # 학생 한 명의 평균을 받아서
+# # 등급을 return 하는 함수를 만드세요.
+# #
+# #
+# # 평균이
+# #
+# # 90 이상 : A
+# # 80 이상 : B
+# # 70 이상 : C
+# # 60 이상 : D
+# # 60 미만 : F
+# #
+# #
+# # 함수 형태:
+# #
+# # def grade(avg):
+# #
+# #
+# # 출력 예:
+# #
+# # 홍길동 평균 : 80.00 / 등급 : B
+# # 김철수 평균 : 81.67 / 등급 : B
+# # 이영희 평균 : 95.00 / 등급 : A
+# # 박민수 평균 : 60.00 / 등급 : D
+# #
+# #
+# # [필수 조건]
+# #
+# # 1. grade() 함수 만들기
+# # 2. if / elif / else 사용
+# # 3. return 사용
+# # 4. for문으로 모든 학생 출력
+# # 5. 평균은 소수점 둘째 자리까지 출력
+
+
+# # ↓↓↓ Q3 답 작성 ↓↓↓
+
 # def grade(avg):
-#
-#
-# 출력 예:
-#
-# 홍길동 평균 : 80.00 / 등급 : B
-# 김철수 평균 : 81.67 / 등급 : B
-# 이영희 평균 : 95.00 / 등급 : A
-# 박민수 평균 : 60.00 / 등급 : D
-#
-#
-# [필수 조건]
-#
-# 1. grade() 함수 만들기
-# 2. if / elif / else 사용
-# 3. return 사용
-# 4. for문으로 모든 학생 출력
-# 5. 평균은 소수점 둘째 자리까지 출력
+#     if avg >= 90 : grade = "A"
+#     elif avg >= 80: grade = "B"
+#     elif avg >= 70: grade = "C"
+#     elif avg >= 60: grade = "D"
+#     else : grade = "F"
+#     return grade 
 
-
-# ↓↓↓ Q3 답 작성 ↓↓↓
+# for s in students :
+#     total = s["kor"] + s["eng"] + s["math"]
+#     avg = total / 3
+#     print(f"{s['name']} 평균 : {avg:.2f} / 등급 : {grade(avg)}")
 
 
 
@@ -182,62 +218,92 @@ students = [
 
 
 
-# ============================================================
-# Q4. 클래스 + 회원 잔여횟수 계산
-# 난이도 : ★★★★☆
-# ============================================================
+
+# # ============================================================
+# # Q4. 클래스 + 회원 잔여횟수 계산
+# # 난이도 : ★★★★☆
+# # ============================================================
 
 
-# [문제]
-#
-# PilatesMember 클래스를 만드세요.
-#
-# 회원 정보:
-#
-# 이름
-# 구매횟수
-# 사용횟수
-#
-#
-# 예)
-#
+# # [문제]
+# #
+# # PilatesMember 클래스를 만드세요.
+# #
+# # 회원 정보:
+# #
+# # 이름
+# # 구매횟수
+# # 사용횟수
+# #
+# #
+# # 예)
+# #
+# # m1 = PilatesMember("지수",20,8)
+# # m2 = PilatesMember("민지",30,17)
+# # m3 = PilatesMember("수진",10,10)
+# #
+# #
+# # 잔여횟수는
+# #
+# # 구매횟수 - 사용횟수
+# #
+# # 입니다.
+# #
+# #
+# # 클래스 안에
+# #
+# # remain()
+# #
+# # 함수를 만들어 잔여횟수를 return 하세요.
+# #
+# #
+# # 출력:
+# #
+# # 지수 / 구매 20회 / 사용 8회 / 잔여 12회
+# # 민지 / 구매 30회 / 사용 17회 / 잔여 13회
+# # 수진 / 구매 10회 / 사용 10회 / 잔여 0회
+# #
+# #
+# # [필수 조건]
+# #
+# # 1. class 사용
+# # 2. __init__ 사용
+# # 3. self 사용
+# # 4. remain() 함수 만들기
+# # 5. remain() 함수에서 return 사용
+# # 6. 객체 3개를 리스트에 저장한 뒤 for문으로 출력
+
+
+# # ↓↓↓ Q4 답 작성 ↓↓↓
+
+# class PilatesMember :
+#     m_list=[]
+
+#     def __init__(self,name,buy,use) :
+#         self.name = name
+#         self.buy = buy
+#         self.use = use
+
+#     def remain(self) :
+#         result= self.buy - self.use
+#         return result
+
+
 # m1 = PilatesMember("지수",20,8)
 # m2 = PilatesMember("민지",30,17)
 # m3 = PilatesMember("수진",10,10)
-#
-#
-# 잔여횟수는
-#
-# 구매횟수 - 사용횟수
-#
-# 입니다.
-#
-#
-# 클래스 안에
-#
-# remain()
-#
-# 함수를 만들어 잔여횟수를 return 하세요.
-#
-#
-# 출력:
-#
-# 지수 / 구매 20회 / 사용 8회 / 잔여 12회
-# 민지 / 구매 30회 / 사용 17회 / 잔여 13회
-# 수진 / 구매 10회 / 사용 10회 / 잔여 0회
-#
-#
-# [필수 조건]
-#
-# 1. class 사용
-# 2. __init__ 사용
-# 3. self 사용
-# 4. remain() 함수 만들기
-# 5. remain() 함수에서 return 사용
-# 6. 객체 3개를 리스트에 저장한 뒤 for문으로 출력
+
+# print(m1.remain())
+# print(m1.remain())
 
 
-# ↓↓↓ Q4 답 작성 ↓↓↓
+# m1.m_list.append(m1)
+# m2.m_list.append(m2)
+# m3.m_list.append(m3)
+
+# for m in m1.m_list : 
+#     print(f"{m.name} / 구매 {m.buy}회 / 사용 {m.use}회 / 잔여 {m.remain()}회")
+
 
 
 
@@ -276,8 +342,21 @@ students = [
 #     {"name":"김철수","kor":70,"eng":85,"math":90},
 #     ...
 # ]
-#
-#
+
+students = []
+with open("c:/aaa/stu2.txt","r",encoding="utf-8") as f:
+    while True : 
+        line = f.readline()
+        if line == "" : break
+        s_line = line.split(",")
+        for i,v in enumerate(s_line) :
+            if i == 0 : continue
+            elif 1<=i<=3 : s_line[i] = int(s_line[i])
+        # print(s_line)
+        students.append({"name":s_line[0],"kor":s_line[1],"eng":s_line[2],"math":s_line[3]})
+# print(students)
+
+
 # 그리고 아래 프로그램을 만드세요.
 #
 #
@@ -288,6 +367,16 @@ students = [
 # 3. 학생추가
 # 4. 학생삭제
 # 9. 종료
+
+while True :
+    print("[ 학생 성적 관리 ]")
+    print("1. 전체학생출력")
+    print("2. 학생검색")
+    print("3. 학생추가")
+    print("4. 학생삭제")
+    print("9. 종료")
+
+    choice = int(input("숫자를 입력하세요 : "))
 #
 #
 # -------------------------------
@@ -298,6 +387,15 @@ students = [
 #
 # 홍길동 / 90 / 80 / 70 / 240 / 80.00
 # 김철수 / 70 / 85 / 90 / 245 / 81.67
+    if choice == 1 : 
+        print("-"*40)
+        print("1번 전체학생출력")
+        print("-"*40)
+        print("이름\t국어\t영어\t수학\t총점\t평균")
+        for s in students :
+            total = s['kor'] + s['eng'] + s['math']
+            avg = total /3
+            print(f"{s['name']}\t{s['kor']}\t{s['eng']}\t{s['math']}\t{total}\t{avg:.2f}")
 #
 #
 # -------------------------------
@@ -311,7 +409,15 @@ students = [
 # 국어 : 90
 # 영어 : 80
 # 수학 : 70
-#
+    elif choice == 2 :
+        print("-"*40)
+        print("2번 학생검색")
+        print("-"*40)
+        name = input("학생이름을 입력하세요 : ")
+        for s in students :
+            if name == s['name'] : 
+                print(f"{name} 학생이 검색되었습니다.")
+                print(f"국어 : {s['kor']}\n영어 : {s['eng']}\n수학 : {s['math']}")
 #
 # -------------------------------
 # 3번 학생추가
@@ -326,7 +432,16 @@ students = [
 #
 # {"name":"박민수","kor":80,"eng":70,"math":90}
 #
-#
+    elif choice == 3 :
+        print("-"*40)
+        print("3번 학생추가")
+        print("-"*40)
+        name = input("이름을 입력하세요. : ")
+        kor = int(input("국어 : "))
+        eng = int(input("영어 : "))
+        math = int(input("수학 : "))
+        students.append({'name':name,'kor':kor,'eng':eng,'math':math})
+    # print(students)
 # -------------------------------
 # 4번 학생삭제
 # -------------------------------
@@ -338,12 +453,23 @@ students = [
 #
 # 학생 삭제 후
 # students 리스트에서도 사라져야 합니다.
+    elif choice==4:
+        print("[4번 학생삭제]")
+        can = input("삭제할 학생이름을 입력하세요 : ")
+        for s in students : 
+            if s['name'] == can :
+                students.remove(s)
+        print(students)
+    elif choice==9:
+        print("프로그램종료")
+        break
+
 #
 #
 # -------------------------------
 # 9번 종료
 # -------------------------------
-#
+    
 # 프로그램을 종료하세요.
 #
 #
