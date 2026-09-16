@@ -1,5 +1,5 @@
-from homestus import Students
-from homestu import Student
+from aix_python_0825.Phome.잡다한.homestus import Students
+from aix_python_0825.Phome.잡다한.homestu import Student
 stus = Students()
 
 

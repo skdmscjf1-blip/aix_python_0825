@@ -1,4 +1,4 @@
-from homefunc import*
+from aix_python_0825.Phome.잡다한.homefunc import*
 
 stu_read ()
 while True : 
