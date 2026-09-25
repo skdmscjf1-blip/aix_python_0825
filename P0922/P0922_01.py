@@ -4,6 +4,7 @@
 # pip install lxml
 # jupyter
 # 크롬드라이버
+#pip install python-dotenv
 
 
 #1-100까지 랜덤숫자를 1개 생성해서

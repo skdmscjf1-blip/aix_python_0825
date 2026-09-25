@@ -25,7 +25,7 @@ print("*"*80)
 # print(soup.find("div",{"id":"header"}))
 # print(soup.find("div",{"id":"utill_menu"}))
 # print(soup.find("div",{"class":"wrap t_right"}))
-print(soup.find("input",{"class":"input_check d_checkall"})['title'])
+# print(soup.find("input",{"class":"input_check d_checkall"})['title'])
 
 # print(soup.prettify()) #코드가 정렬이 되어 저장이 됨.
 # print(res.text) 

@@ -32,11 +32,11 @@ for idx,tr in enumerate(trs) :
 
         #----------------------------------------------------------------
         # img정보를 가지고 호출을 다시해야 함. - img의 정보파일을 가져옴.
-        os.makedirs("./melon_img",exist_ok=True) #exist_ok : 폴더가 존재하면 무시 
+        # os.makedirs("./melon_img",exist_ok=True) #exist_ok : 폴더가 존재하면 무시 
 
-        img_res = requests.get(img,headers=headers)
-        with open(f"melon_img/melon_2026_{idx+1}.jpg",'wb') as f :
-            f.write(img_res.content)
+        # img_res = requests.get(img,headers=headers)
+        # with open(f"melon_img/melon_2026_{idx+1}.jpg",'wb') as f :
+        #     f.write(img_res.content)
         #----------------------------------------------------------------
 
         s_as = tds[5].find_all('a')
