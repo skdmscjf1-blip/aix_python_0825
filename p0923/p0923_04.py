@@ -25,7 +25,7 @@ from dotenv import load_dotenv
 # while True:
 #     # 스크롤 내리기
 #     browser.execute_script('window.scroll(0,document.body.scrollHeight)')
-#     time.sleep(3) # 내용추가하는데 시간대기
+#     time.sleep(5) # 내용추가하는데 시간대기
 
 #     # 다시 높이 가져오기
 #     next_height = browser.execute_script('return document.body.scrollHeight')
@@ -37,8 +37,8 @@ from dotenv import load_dotenv
 # print('더 이상 높이 변경이 없음')
 # time.sleep(1)
 
-# 파일저장해서 저장한 파일을 가지고 정보를 가져오기
-# 이미지, 숙소명, 별점, 리뷰수, 금액
+# # 파일저장해서 저장한 파일을 가지고 정보를 가져오기
+# # 이미지, 숙소명, 별점, 리뷰수, 금액
 # # 파일저장
 # soup = BeautifulSoup(browser.page_source,'lxml')
 # with open('yeogi1.html','w',encoding='utf-8') as f:
